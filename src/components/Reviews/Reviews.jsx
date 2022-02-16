@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useHistory, useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import * as fetches from '../../services/fetches';
 
 const Reviews = () => {

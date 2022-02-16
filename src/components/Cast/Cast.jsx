@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
-import { Link, useHistory, useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import * as fetches from '../../services/fetches';
 
 const Cast = () => {
-    // const { movieId } = useParams();
-    // console.log(useParams + "from Cast!");
     const { movieId } = useParams();
     const [credits, setCredits] = useState(null);
     console.log(movieId);
@@ -21,7 +19,6 @@ const Cast = () => {
                     <p>Character: { credit.character }</p>
                 </li>)}
             </ul>
-            {/* <Link to="/">Go Back</Link> */}
         </>
     ) : null;
 }

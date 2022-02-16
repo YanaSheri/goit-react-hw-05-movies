@@ -31,7 +31,13 @@ export function getMovieReviews(id) {
   );
 }
 
+export function getMoviesByKeyWord(q) {
+  return fetchWithErrorHandling(
+    `${BASE_URL}/search/movie?api_key=${KEY}&language=en-US&query=${q}`
+  );
+}
 
+// https://api.themoviedb.org/3/search/movie?api_key=<<api_key>>&language=en-US&page=1&include_adult=false
 // const myKey = "8a7432db37f5ff14bd102ef897a46bd5";
 // console.log(myKey);
 
