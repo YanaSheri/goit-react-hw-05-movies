@@ -12,17 +12,15 @@ export default function App() {
     {/* // <Container> */}
       <Navigation />
 
-       <Route path="/" exact component={HomePage}>
-        {/* <Home /> */}
-      </Route>
-
-      <Route path="/movies">
-        {/* <Movies /> */}
-      </Route>
-
+      <Route path="/" exact component={HomePage} />
+      
       <Route path="/movies/:movieId">
         <MovieDetailsPage/>
       </Route>
+      
+      <Route path="/movies"/>
+
+      
 
     {/* // </Container> */}
       </>

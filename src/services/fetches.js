@@ -19,6 +19,18 @@ export function getOneMovie(id) {
   );
 }
 
+export function getMovieCredits(id) {
+  return fetchWithErrorHandling(
+    `${BASE_URL}/movie/${id}/credits?api_key=${KEY}&language=en-US`
+  );
+}
+
+export function getMovieReviews(id) {
+  return fetchWithErrorHandling(
+    `${BASE_URL}/movie/${id}/reviews?api_key=${KEY}&language=en-US`
+  );
+}
+
 
 // const myKey = "8a7432db37f5ff14bd102ef897a46bd5";
 // console.log(myKey);

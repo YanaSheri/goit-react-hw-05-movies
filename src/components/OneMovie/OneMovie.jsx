@@ -11,11 +11,11 @@ const OneMovie = () => {
     // const handleGoBack = () => {
     //     history.push(location.state.from);
     // };
-    console.log(movieId);
+    // console.log(movieId);
      useEffect(() => {
         movieId && fetches.getOneMovie(movieId).then(setMovie)
     }, [movieId]);
-    console.log(movie);
+    // console.log(movie);
     const imgUrl = 'https://image.tmdb.org/t/p/w400';
     return movie ? (
         <>
